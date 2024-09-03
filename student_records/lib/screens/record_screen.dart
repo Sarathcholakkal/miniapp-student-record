@@ -165,7 +165,15 @@ class _RecordScreenState extends State<RecordScreen> {
                                       .min, //?  renderBox error will occure due to  unspeicifed size
                                   children: [
                                     IconButton(
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.of(context)
+                                            .push(MaterialPageRoute(
+                                          builder: (ctx) {
+                                            return UpdateScreen(
+                                                studentData: student);
+                                          },
+                                        ));
+                                      },
                                       icon: const Icon(Icons.edit),
                                     ),
                                     IconButton(
