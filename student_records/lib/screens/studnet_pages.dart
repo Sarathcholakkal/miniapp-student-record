@@ -62,9 +62,11 @@ class StudentPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(50)),
                       margin: const EdgeInsets.all(20),
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
                         child: const Text(
-                          "submit",
+                          "exit",
                           style: TextStyle(color: Colors.black, fontSize: 20),
                         ),
                       ),
