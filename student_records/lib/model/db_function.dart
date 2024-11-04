@@ -36,11 +36,11 @@ Future<void> addStudent(StudentModel studentdata) async {
 Future<void> getAllStudent() async {
   studentListNotifier.value.clear();
   final values = await _db.rawQuery('SELECT * FROM studenttable');
-  values.forEach((map) {
+  for (var map in values) {
     final student = StudentModel.formMap(map);
     studentListNotifier.value.add(student);
     studentListNotifier.notifyListeners();
-  });
+  }
 
   print("$values this data map");
 }

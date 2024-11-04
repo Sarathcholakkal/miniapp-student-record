@@ -35,7 +35,7 @@ class _Flash_ScreenState extends State<Flash_Screen> {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (ctx) {
-          return HomeScreen();
+          return const HomeScreen();
           //  HomeScreen();
         },
       ),

@@ -1,12 +1,6 @@
-import 'dart:convert';
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:student_records/model/db_function.dart';
 import 'package:student_records/model/student_model.dart';
-import 'package:student_records/screens/record_screen.dart';
 
 class UpdateScreen extends StatefulWidget {
   final StudentModel studentData;
@@ -188,7 +182,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
                           decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(50)),
-                          margin: const EdgeInsets.all(20),
+                          margin: const EdgeInsets.only(left: 50),
                           child: TextButton(
                             onPressed: () {
                               if (_signInKey.currentState!.validate()) {

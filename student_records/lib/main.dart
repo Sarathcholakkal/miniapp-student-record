@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:student_records/screens/flash_screen.dart';
 import 'package:student_records/model/db_function.dart';
-import 'package:student_records/screens/update_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

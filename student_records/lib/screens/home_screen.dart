@@ -1,8 +1,6 @@
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:student_records/model/db_function.dart';
 import 'package:student_records/model/student_model.dart';
@@ -226,8 +224,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           alignment: Alignment.center,
                           width: 250,
                           decoration: BoxDecoration(
-                              color: Colors.blue,
-                              borderRadius: BorderRadius.circular(50)),
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(50),
+                          ),
                           margin: const EdgeInsets.all(20),
                           child: TextButton(
                             onPressed: () {

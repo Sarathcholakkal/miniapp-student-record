@@ -107,6 +107,10 @@ class _RecordScreenState extends State<RecordScreen> {
                                         color: Colors.white),
                                     child: Column(
                                       children: [
+                                        const Text(
+                                          'aaa',
+                                          style: TextStyle(),
+                                        ),
                                         Expanded(
                                           child: Container(
                                             decoration: BoxDecoration(
@@ -163,7 +167,7 @@ class _RecordScreenState extends State<RecordScreen> {
                                                   Icons.delete,
                                                   size: 30,
                                                 ),
-                                              )
+                                              ),
                                             ],
                                           ),
                                         )
